@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manager Dashboard - CollabSphere</title>
+  <link rel="stylesheet" href="manager.css" />
+
+</head>
+<body>
+  <!-- Header of page -->
+  <header class="dashboardHeader">
+    <h2>CollabSphere</h2>
+    <p>Manager Dashboard - Manage Your Projects and Tasks</p>
+  </header>
+
+  <!-- main Section -->
+
+  <div id="project-container">
+    <h3 style="color: white;">Create New Project</h3>
+    <input type="text" id="project-name" placeholder="Project Name" />
+    <textarea id="project-description" placeholder="Project Description"></textarea>
+    <h4>Select Team Members:</h4>
+    <select id="team-members" multiple>
+      <option value="member1">Member 1</option>
+      <option value="member2">Member 2</option>
+      <option value="member3">Member 3</option>
+    </select>
+    <input type="text" id="member-name" placeholder="Enter Member Name" />
+
+    <h4>Assign Tasks:</h4>
+    <input type="text" id="task-name" placeholder="Task Name" />
+    <textarea id="task-description" placeholder="Task Description"></textarea>
+    <h4>Select a Deadline for task assigned</h4>
+    <input type="date" id="task-deadline" />
+    <h4>Set Task priority</h4>
+    <select id="task-priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button onclick="createProject()">Create Project</button>
+  </div>
+
+  <script src="manager.js"></script>
+</body>
+</html>

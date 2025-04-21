@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #2b606b;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.dashboardHeader {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+    background-color: #769399;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+    border: 2px solid white;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;  
+    margin: 0 auto;  
+    border-radius: 10px;  
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+#project-container input,
+#project-container textarea,
+#project-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;  /* Add margin for spacing between inputs */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+#project-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #718c9c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#project-container button:hover {
+    background-color: #78aecf;  /* Darker shade on hover */
+}
+
+h3, h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+select[multiple] {
+    height: 120px;  /* Adjust height for the multiple select dropdown */
+    overflow-y: auto;  /* Enable scroll if too many options */
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;  /* Allow vertical resizing of textarea */
+}
