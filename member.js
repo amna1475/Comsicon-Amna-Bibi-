@@ -67,7 +67,6 @@ function addTaskAsManager() {
   loadTasks();
 }
 
-// Optional: Show "Add Task" button if manager
 function checkIfManager() {
   const isManager = localStorage.getItem("currentUserRole") === "manager";
 
@@ -79,7 +78,6 @@ function checkIfManager() {
   }
 }
 
-// On page load
 window.onload = function () {
   loadTasks();
   checkIfManager();
